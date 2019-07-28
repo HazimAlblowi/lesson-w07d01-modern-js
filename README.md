@@ -134,6 +134,14 @@ function whoIsTheBestIA() {
 Your solution:
 
 ```js
+const addFive = num => 5 + num;
+
+const divide = (num1, num2) => num1 / num2;
+
+const whoIsTheBestIA = () => {
+    let iaName = 'Alanoud'
+    console.log(iaName);
+}
 
 ```
 
@@ -151,6 +159,17 @@ Your solution:
 
 ```js
 
+const fullName = function(first, last){
+  return `${first} ${last}`;
+}
+
+const fullName = (first, last) =>{
+  return `${first} ${last}`;
+}
+
+
+const fullName = (first, last) => `${first} ${last}`;
+
 ```
 
 ##### Turn `sayHello` into an arrow function
@@ -166,6 +185,7 @@ sayHello();
 Your solution:
 
 ```js
+const sayHello = (name = "world") => console.log("Hello " + name)
 
 ```
 
@@ -227,6 +247,7 @@ instructors.forEach(function(item){
 
     // For each friend in friends, print "Hi friendName!"
     // Write your solution here
+    friends.forEach(friend => console.log(`Hi ${friend}!`));
     ```
 2. Crazy Numbers
     ```js
@@ -236,6 +257,7 @@ instructors.forEach(function(item){
 
     // Sum all the numbers in nums and save the result in total
     // Write your solution here
+    nums.forEach(num => total += num);
     ```
 3. Crazy number again!!
     ```js
@@ -248,6 +270,8 @@ instructors.forEach(function(item){
     // in totalNumbersUnder4000
     //
     // Write your solution here
+    stringNumbers.forEach(num =>  Number(num)  < 4000 ? totalNumbersUnder4000 += Number(num) : "");
+
     ```
 
 **Resources:**
